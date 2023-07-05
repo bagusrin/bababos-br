@@ -135,7 +135,8 @@ http://localhost:8000/docs
 
 
 ### ERD
-![Flowchart (1)](https://user-images.githubusercontent.com/13326311/216122518-50d2c331-c904-4019-8955-7cef26508dc6.jpg)
+<img width="931" alt="Screen Shot 2023-07-06 at 03 56 20" src="https://github.com/bagusrin/bababos-br/assets/13326311/e95db56e-b772-4458-8b7f-239fd362d66b">
+
 
 
 ### Sample Postman
