@@ -34,8 +34,9 @@ How to Run?
 ```sh
 $ cd project
 $ ./manage.py runserver 127.0.0.1:8000
+```
 
-### Endpoint List
+Endpoint List
 
 ```sh
 [POST] Create Customer. Url : http://127.0.0.1:8000/customers/
@@ -53,7 +54,7 @@ $ ./manage.py runserver 127.0.0.1:8000
 [PUT] Update Quotation. Url : http://127.0.0.1:8000/quotations/[quotation_no]/
 [GET] Get Detail Quotation. Url : http://127.0.0.1:8000/quotations/[quotation_no]/
 [GET] Get History Order. Url : http://127.0.0.1:8000/history-orders/
-
+```
 
 ### Example Request Endpoint
 
