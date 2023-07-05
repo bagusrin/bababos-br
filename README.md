@@ -133,7 +133,8 @@ Response :
 ### Swagger
 http://localhost:8000/docs
 
-### System Design
+
+### ERD
 ![Flowchart (1)](https://user-images.githubusercontent.com/13326311/216122518-50d2c331-c904-4019-8955-7cef26508dc6.jpg)
 
 
