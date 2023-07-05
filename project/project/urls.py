@@ -18,6 +18,11 @@ from django.contrib import admin
 from django.http import JsonResponse
 from django.urls import path,include
 
+from django.contrib.auth.decorators import login_required
+from rest_framework import permissions
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+
 admin.autodiscover()
 
 def error404(request, exception=None):
@@ -44,6 +49,19 @@ def error500(request, exception=None):
 handler404 = error404
 handler500 = error500
 
+schema_view = get_schema_view(
+   openapi.Info(
+      title="API Bababos",
+      default_version='v1',
+      description="API for Bababos's App",
+      terms_of_service="https://www.google.com/policies/terms/",
+      contact=openapi.Contact(email="bagusrin.xyz@gmail.com"),
+      license=openapi.License(name="BSD License"),
+   ),
+   #public=False,
+   #permission_classes=(permissions.IsAuthenticated,),
+)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('customers/', include("src.app.customer.urls")),
@@ -53,5 +71,6 @@ urlpatterns = [
     path('shippings/', include("src.app.shipping.urls")),
     path('prices/', include("src.app.pricelist.urls")),
     path('quotations/', include("src.app.quotation.urls")),
-    path('history-orders/', include("src.app.order.urls"))
+    path('history-orders/', include("src.app.order.urls")),
+    path(r'docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui')
 ]
