@@ -16,6 +16,41 @@ $ source env/bin/activate
 $ pip install -r "requirements.txt" #install dependency
 ```
 
+Add flie .env bababos-br/project
+
+```sh
+DB_USER=''
+DB_PASSWORD=''
+DB_HOST=''
+DB_PORT=''
+DB_NAME=db_bababos
+DEBUG=TRUE
+```
+
+Add flie local_settings.py
+
+```sh
+$ touch bababos-br/project/project/local_settings.py
+```
+```sh
+from dotenv import dotenv_values
+
+config = dotenv_values(".env")
+
+DATABASES = {
+	'default': {
+    	'ENGINE': 'django.db.backends.mysql',
+    	'NAME': config.get('DB_NAME'),
+    	'USER': config.get('DB_USER'),
+    	'PASSWORD': config.get('DB_PASSWORD'),
+    	'HOST': config.get('DB_HOST'),
+    	'PORT': config.get('DB_PORT'),
+	}
+}
+
+## OTHER ENVIRONMENT PUT BELOW ##
+```
+
 Migration DB?
 
 ```sh
@@ -36,7 +71,25 @@ $ cd project
 $ ./manage.py runserver 127.0.0.1:8000
 ```
 
-Endpoint List
+### ERD
+![db_bababos (2)](https://github.com/bagusrin/bababos-br/assets/13326311/076df981-3ef7-4894-9cd3-f881c232bb56)
+
+### Flowchart
+![flow-bababos](https://github.com/bagusrin/bababos-br/assets/13326311/59b32896-134c-42b3-96cf-8fc6b1a07c51)
+
+
+### Case Study
+```
+1. Customers can request quotations for more than one product.
+2. Products ordered may be from different suppliers.
+3. When a customer makes a quotation, the system will look for the lowest price from all suppliers if stock is still available.
+4. The system will determine the selling price per unit based on the quantity ordered.
+5. Logistic fee is calculated based on the longest route from the fleet pool. Fleet pool is located in Cilincing. So, For example if the customer is located in Bekasi and then supplier I is located in Jakarta Selatan and then supplier II is located in Gunung Sindur Bogor, the logistic fee = 1,9M using Fuso with longest route Cilincing - Gn Sindur, Bogor
+6. The system will provide the results of the quotation made by the customer which contains product unit selling price, logistic fee, and total amount.
+7. When the customer agrees with the price given, the status will change from "quotation" to "ordered"
+```
+
+### Endpoint List
 
 ```sh
 [POST] Create Customer. Url : http://127.0.0.1:8000/customers/
@@ -128,23 +181,27 @@ Response :
 }
 ```
 
+### Sample Postman
 
+## Add pricelist
+<img width="762" alt="Screen Shot 2023-07-04 at 14 40 30" src="https://github.com/bagusrin/bababos-br/assets/13326311/b3f702e6-cbb3-4c86-b3dc-e43c8dd05c0b">
 
-### Swagger
+## Add quotation
+<img width="789" alt="Screen Shot 2023-07-06 at 01 37 13" src="https://github.com/bagusrin/bababos-br/assets/13326311/73d5b760-12c4-457d-9a89-6e0e78110386">
+
+<img width="765" alt="Screen Shot 2023-07-06 at 01 37 21" src="https://github.com/bagusrin/bababos-br/assets/13326311/4be9223f-7a49-4347-b12d-cb2ae94fd822">
+
+## Update quotation to order (accept by customer)
+<img width="838" alt="Screen Shot 2023-07-06 at 02 04 35" src="https://github.com/bagusrin/bababos-br/assets/13326311/150c3024-c6b0-4480-925e-9808e49e71a6">
+
+## History Order
+<img width="787" alt="Screen Shot 2023-07-06 at 03 02 56" src="https://github.com/bagusrin/bababos-br/assets/13326311/2931f6db-c97d-4de4-8d01-3bdd73039308">
+
+### Swagger Docs
 http://localhost:8000/docs
 
 
-### ERD
-![Flowchart (1)](https://user-images.githubusercontent.com/13326311/216122518-50d2c331-c904-4019-8955-7cef26508dc6.jpg)
-
-
-### Sample Postman
-
-<img width="629" alt="Screen Shot 2023-02-02 at 00 40 54" src="https://user-images.githubusercontent.com/13326311/216120731-2a5bad90-7271-4861-bd60-485642a754bd.png">
-
-<img width="558" alt="Screen Shot 2023-02-01 at 22 32 37" src="https://user-images.githubusercontent.com/13326311/216120933-dd27ebfa-5f9a-4f73-a7f6-37a4bf53dd37.png">
-
-<img width="643" alt="Screen Shot 2023-02-01 at 22 43 40" src="https://user-images.githubusercontent.com/13326311/216121031-57634abf-9be7-4dd4-852e-a786681b9fdf.png">
 
 ### Notes
-There's still a lot that can be refactored. But due to time constraints, I have not been able to do so. I'm sorry for being late to submit
+1. to be honest, I'm not sure whether the purchasing flow that I'm working on is correct or not.
+2. There's still a lot that can be done like code refactored, create presentaion, deploy to server, create unit test, and optimize swagger docs. But due to time constraints, I have not been able to do so. I'm sorry for being late to submit
