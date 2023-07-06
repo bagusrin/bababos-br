@@ -131,12 +131,6 @@ Response :
 }
 ```
 
-
-
-### Swagger
-http://localhost:8000/docs
-
-
 ### Sample Postman
 
 ## Add pricelist
@@ -152,6 +146,9 @@ http://localhost:8000/docs
 
 ## History Order
 <img width="787" alt="Screen Shot 2023-07-06 at 03 02 56" src="https://github.com/bagusrin/bababos-br/assets/13326311/2931f6db-c97d-4de4-8d01-3bdd73039308">
+
+### Swagger Docs
+http://localhost:8000/docs
 
 
 
