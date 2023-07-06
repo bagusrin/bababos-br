@@ -15,7 +15,7 @@ class OrderReadSerializer(serializers.ModelSerializer):
         return self.get_order(obj)['customer_code']
     
     def get_order_date(self,obj):
-        return self.get_order(obj)['customer_code']
+        return self.get_order(obj)['order_date']
     
     def get_unit(self,obj):
         return self.get_product(obj)['unit']
