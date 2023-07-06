@@ -135,17 +135,28 @@ http://localhost:8000/docs
 
 
 ### ERD
-<img width="931" alt="Screen Shot 2023-07-06 at 03 56 20" src="https://github.com/bagusrin/bababos-br/assets/13326311/e95db56e-b772-4458-8b7f-239fd362d66b">
+![db_bababos (2)](https://github.com/bagusrin/bababos-br/assets/13326311/076df981-3ef7-4894-9cd3-f881c232bb56)
+
 
 
 
 ### Sample Postman
 
-<img width="629" alt="Screen Shot 2023-02-02 at 00 40 54" src="https://user-images.githubusercontent.com/13326311/216120731-2a5bad90-7271-4861-bd60-485642a754bd.png">
+Add pricelist
+<img width="762" alt="Screen Shot 2023-07-04 at 14 40 30" src="https://github.com/bagusrin/bababos-br/assets/13326311/b3f702e6-cbb3-4c86-b3dc-e43c8dd05c0b">
 
-<img width="558" alt="Screen Shot 2023-02-01 at 22 32 37" src="https://user-images.githubusercontent.com/13326311/216120933-dd27ebfa-5f9a-4f73-a7f6-37a4bf53dd37.png">
+Add quotation
+<img width="789" alt="Screen Shot 2023-07-06 at 01 37 13" src="https://github.com/bagusrin/bababos-br/assets/13326311/73d5b760-12c4-457d-9a89-6e0e78110386">
 
-<img width="643" alt="Screen Shot 2023-02-01 at 22 43 40" src="https://user-images.githubusercontent.com/13326311/216121031-57634abf-9be7-4dd4-852e-a786681b9fdf.png">
+<img width="765" alt="Screen Shot 2023-07-06 at 01 37 21" src="https://github.com/bagusrin/bababos-br/assets/13326311/4be9223f-7a49-4347-b12d-cb2ae94fd822">
+
+Update quotation to order (accept by customer)
+<img width="838" alt="Screen Shot 2023-07-06 at 02 04 35" src="https://github.com/bagusrin/bababos-br/assets/13326311/150c3024-c6b0-4480-925e-9808e49e71a6">
+
+History Order
+<img width="787" alt="Screen Shot 2023-07-06 at 03 02 56" src="https://github.com/bagusrin/bababos-br/assets/13326311/2931f6db-c97d-4de4-8d01-3bdd73039308">
+
+
 
 ### Notes
 There's still a lot that can be refactored. But due to time constraints, I have not been able to do so. I'm sorry for being late to submit
