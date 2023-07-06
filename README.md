@@ -204,4 +204,4 @@ http://localhost:8000/docs
 
 ### Notes
 1. to be honest, I'm not sure whether the purchasing flow that I'm working on is correct or not.
-2. There's still a lot that can be done like code refactored, create presentaion, deploy to server, and create unit test. But due to time constraints, I have not been able to do so. I'm sorry for being late to submit
+2. There's still a lot that can be done like code refactored, create presentaion, deploy to server, create unit test, and optimize swagger docs. But due to time constraints, I have not been able to do so. I'm sorry for being late to submit
