@@ -39,6 +39,17 @@ $ ./manage.py runserver 127.0.0.1:8000
 ### ERD
 ![db_bababos (2)](https://github.com/bagusrin/bababos-br/assets/13326311/076df981-3ef7-4894-9cd3-f881c232bb56)
 
+### Case Study
+```
+1. Customers can request quotations for more than one product.
+2. Products ordered may be from different suppliers.
+3. When a customer makes a quotation, the system will look for the lowest price from all suppliers if stock is still available.
+4. The system will determine the selling price per unit based on the quantity ordered.
+5. Logistic fee is calculated based on the longest route from the fleet pool. Fleet pool is located in Cilincing. So, For example if the customer is located in Bekasi and then supplier I is located in Jakarta Selatan and then supplier II is located in Gunung Sindur Bogor, the logistic fee = 1,9M using Fuso with longest route Cilincing - Gn Sindur, Bogor
+6. The system will provide the results of the quotation made by the customer which contains product unit selling price, logistic fee, and total amount.
+7. When the customer agrees with the price given, the status will change from "quotation" to "ordered"
+```
+
 ### Endpoint List
 
 ```sh
