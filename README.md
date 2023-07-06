@@ -16,6 +16,30 @@ $ source env/bin/activate
 $ pip install -r "requirements.txt" #install dependency
 ```
 
+Add flie local_settings.py
+
+```sh
+$ touch bababos-br/project/project/local_settings.py
+```
+```sh
+from dotenv import dotenv_values
+
+config = dotenv_values(".env")
+
+DATABASES = {
+	'default': {
+    	'ENGINE': 'django.db.backends.mysql',
+    	'NAME': config.get('DB_NAME'),
+    	'USER': config.get('DB_USER'),
+    	'PASSWORD': config.get('DB_PASSWORD'),
+    	'HOST': config.get('DB_HOST'),
+    	'PORT': config.get('DB_PORT'),
+	}
+}
+
+## OTHER ENVIRONMENT PUT BELOW ##
+```
+
 Migration DB?
 
 ```sh
