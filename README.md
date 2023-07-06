@@ -16,6 +16,17 @@ $ source env/bin/activate
 $ pip install -r "requirements.txt" #install dependency
 ```
 
+Add flie .env bababos-br/project
+
+```sh
+DB_USER=''
+DB_PASSWORD=''
+DB_HOST=''
+DB_PORT=''
+DB_NAME=db_bababos
+DEBUG=TRUE
+```
+
 Add flie local_settings.py
 
 ```sh
