@@ -39,6 +39,10 @@ $ ./manage.py runserver 127.0.0.1:8000
 ### ERD
 ![db_bababos (2)](https://github.com/bagusrin/bababos-br/assets/13326311/076df981-3ef7-4894-9cd3-f881c232bb56)
 
+### Flowchart
+![flow-bababos](https://github.com/bagusrin/bababos-br/assets/13326311/59b32896-134c-42b3-96cf-8fc6b1a07c51)
+
+
 ### Case Study
 ```
 1. Customers can request quotations for more than one product.
