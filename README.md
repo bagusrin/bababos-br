@@ -142,18 +142,18 @@ http://localhost:8000/docs
 
 ### Sample Postman
 
-Add pricelist
+## Add pricelist
 <img width="762" alt="Screen Shot 2023-07-04 at 14 40 30" src="https://github.com/bagusrin/bababos-br/assets/13326311/b3f702e6-cbb3-4c86-b3dc-e43c8dd05c0b">
 
-Add quotation
+## Add quotation
 <img width="789" alt="Screen Shot 2023-07-06 at 01 37 13" src="https://github.com/bagusrin/bababos-br/assets/13326311/73d5b760-12c4-457d-9a89-6e0e78110386">
 
 <img width="765" alt="Screen Shot 2023-07-06 at 01 37 21" src="https://github.com/bagusrin/bababos-br/assets/13326311/4be9223f-7a49-4347-b12d-cb2ae94fd822">
 
-Update quotation to order (accept by customer)
+## Update quotation to order (accept by customer)
 <img width="838" alt="Screen Shot 2023-07-06 at 02 04 35" src="https://github.com/bagusrin/bababos-br/assets/13326311/150c3024-c6b0-4480-925e-9808e49e71a6">
 
-History Order
+## History Order
 <img width="787" alt="Screen Shot 2023-07-06 at 03 02 56" src="https://github.com/bagusrin/bababos-br/assets/13326311/2931f6db-c97d-4de4-8d01-3bdd73039308">
 
 
