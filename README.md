@@ -36,6 +36,9 @@ $ cd project
 $ ./manage.py runserver 127.0.0.1:8000
 ```
 
+### ERD
+![db_bababos (2)](https://github.com/bagusrin/bababos-br/assets/13326311/076df981-3ef7-4894-9cd3-f881c232bb56)
+
 Endpoint List
 
 ```sh
@@ -132,12 +135,6 @@ Response :
 
 ### Swagger
 http://localhost:8000/docs
-
-
-### ERD
-![db_bababos (2)](https://github.com/bagusrin/bababos-br/assets/13326311/076df981-3ef7-4894-9cd3-f881c232bb56)
-
-
 
 
 ### Sample Postman
